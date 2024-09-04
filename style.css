@@ -12,7 +12,7 @@
     --highlight-color : #ffffff;
     --mid-shade-0 : #30E3CA;
     --mid-shade-1 : #858585;
-
+    --text-color : #ffffff;
 }
 body{
     height: 100%;
@@ -38,23 +38,23 @@ nav{
     width: 100%;
     color: white;
 }
-nav ul{
+ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
-nav ul li{
+ul li{
     position: relative;
     font-family: 'Comfortaa', cursive;
     background-color: rgba(59, 25, 25, 0.685);
-    border-radius: 10%;
+    border-radius: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
     margin: 0 1rem;
 }
-nav ul li:hover{
+ul li:hover{
     background-color: rgb(59, 25, 58);
     transform: scale(120%);
 }
@@ -161,7 +161,7 @@ nav ul li:hover{
     width: 100%;
     overflow: hidden;
     text-shadow: none;
-    color: rgb(255, 213, 242);
+    color: #ffd5f2;
     justify-content: center;
 }
 .journeys p{
@@ -195,4 +195,50 @@ nav ul li:hover{
 .right-j.reveal.active{
     transform: translateX(0);
     opacity: 100%;
+}
+.contacts{
+    height: 60vh;
+    background-image: url("assets/contactsBackground3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    font-size: 2rem;
+    width: 100%;
+    overflow: hidden;
+    text-shadow: none;
+    color: rgb(255, 213, 242);
+    justify-content: center;
+    align-self: center;
+}
+
+.contacts ul{
+    justify-content: center;
+    align-self: center;
+}
+.contacts ul li{
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.578);
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color:var(--text-color);
+}
+a:visited{
+    color:var(--text-color);
+}
+a:hover{
+    color:var(--text-color);
+}
+a:focus{
+    color:var(--text-color);
+}
+a:active{
+    color:var(--text-color);
 }
